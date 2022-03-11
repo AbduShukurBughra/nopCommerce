@@ -67,7 +67,7 @@ public class TestUtility {
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    //*********Generate Random Data Using Java Faker***********
+    //Generate Random Data Using Java Faker
     public static String generateFakeTitle(){
         Faker faker = new Faker();
         return faker.name().title();
@@ -98,7 +98,6 @@ public class TestUtility {
         return faker.phoneNumber().subscriberNumber();
     }
 
-    //*****************************************************
 
     //Generate Random Email Address
     public static String randomEmailAddress(){
@@ -117,8 +116,6 @@ public class TestUtility {
         return RandomStringUtils.randomAlphabetic(8);
     }
 
-
-    //****************************************************
 
     //Read From Excel File
     public static String readFromExcel(String fileName,String sheetName,int rowNumber,int columnNumber){
@@ -198,7 +195,7 @@ public class TestUtility {
         return values;
     }
 
-    //************Take Screen Shot Function*******************
+    //Take Screen Shot Function
 
     public static void takeScreenShot(String folder,String fileName,WebDriver driver){
         DateTime dateTime = new DateTime();
@@ -215,7 +212,7 @@ public class TestUtility {
         }
     }
 
-    //**************Read From CSV File*********************
+    //Read From CSV File
     public static String readFromCSVFile(String folder,String fileName,String headerName){
         Reader reader = null;
         try {
